@@ -14,13 +14,13 @@ can be queried over the DNS.
 
 This includes:
 
-Discovery Proxy
-: finds answers for DNSSD queries over DNS using multicast DNS.
-Discovery Relay
-: uses DNS Stateful Operations to relay mDNS queries from and
-  mDNS responses to Discovery Proxies on other links
-Discovery Broker
-: aggregates answers from one or more Discovery Proxies, possibly rewriting the answers
-Service Registration
-: allows DNSSD services to publish the services they offer on a first come, first served
+* [Discovery Proxy](https://tools.ietf.org/html/draft-ietf-dnssd-hybrid): finds
+answers for DNSSD queries over DNS by proxying them to multicast DNS.
+* [Discovery Relay](https://tools.ietf.org/html/draft-sctl-dnssd-mdns-relay): uses DNS
+Stateful Operations to relay mDNS queries from and
+mDNS responses to Discovery Proxies on other links
+* [Discovery Broker](https://tools.ietf.org/html/draft-sctl-discovery-broker): aggregates
+answers from one or more Discovery Proxies, possibly rewriting the answers
+* [Service Registration](https://tools.ietf.org/html/draft-sctl-service-registration): allows
+DNSSD services to publish the services they offer on a first come, first served
 process using public key cryptography to protect names once claimed
